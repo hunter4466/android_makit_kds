@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
+		96905EF65AED1B983A6B3ABC /* libPods-makitkdsmobile.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-makitkdsmobile.a */; };
+		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
+		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
+		936E3C06B7F846AF9988767F /* Cocogoose_Pro_Italic-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89E9D79A33C549718AC1ED0E /* Cocogoose_Pro_Italic-trial.ttf */; };
+		258148D4DC314AC69320577D /* Cocogoose_Pro_Light_Italic-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D10DC6ED7D24A9EA92811C4 /* Cocogoose_Pro_Light_Italic-trial.ttf */; };
+		589241A9EAF74EF68F24E8C7 /* Cocogoose_Pro_Light-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CC2E4D8D02E4452D9FB46405 /* Cocogoose_Pro_Light-trial.ttf */; };
+		241C8718AF384C68A4AF5AAF /* Cocogoose_Pro_Semilight_Italic-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 94AE7EA14A5B4E4E9F7A2473 /* Cocogoose_Pro_Semilight_Italic-trial.ttf */; };
+		D0A524159E654DE0B78A9C63 /* Cocogoose_Pro_Semilight-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6F4524BECE854684875669C1 /* Cocogoose_Pro_Semilight-trial.ttf */; };
+		16440BCB3C97455796FC6732 /* Cocogoose_Pro_Thin_Italic-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E938A6A2C9754804862059AA /* Cocogoose_Pro_Thin_Italic-trial.ttf */; };
+		0A19B92F1AB3429A8E25CDFC /* Cocogoose_Pro_Thin-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 450807C7FF8B48BF813B513A /* Cocogoose_Pro_Thin-trial.ttf */; };
+		FCA48A29785443E49AC852B5 /* Cocogoose_Pro_UltraLight_Italic-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7F7BED5E770A4652B70E78CD /* Cocogoose_Pro_UltraLight_Italic-trial.ttf */; };
+		C5993CA9E3DE45999C7A418F /* Cocogoose_Pro_Ultralight-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 65AC74DC96B44D0F843B7901 /* Cocogoose_Pro_Ultralight-trial.ttf */; };
+		F5EB5CE3AF1B48859E151F22 /* Cocogoose_Pro-trial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9CEB566EA6543F68ED5FDC2 /* Cocogoose_Pro-trial.ttf */; };
+		E8CD433D1A024E8D9A998247 /* Lato-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5AB70F1340E4D2BBE798E30 /* Lato-Black.ttf */; };
+		E78C527732A34EAF9E9E3B95 /* Lato-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B4997434A4945F3BCB053BE /* Lato-BlackItalic.ttf */; };
+		E794FC4C8E2E409286E49469 /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 401B7F758E2F431683C77448 /* Lato-Bold.ttf */; };
+		6786E545DFA84FD1AD24A6E2 /* Lato-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F8E372350AE4494B133AB0C /* Lato-BoldItalic.ttf */; };
+		ECB4F63F58434BC1AE4597EB /* Lato-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A12028CB23A84B01B8B620FF /* Lato-Italic.ttf */; };
+		D6BFA9D9BECA473C93106F18 /* Lato-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2E07B03B7BB474BB2291267 /* Lato-Light.ttf */; };
+		74906FF422ED495A964F7C03 /* Lato-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 290CDB91893E4A40A7BAAD55 /* Lato-LightItalic.ttf */; };
+		86BB9623A8984E79B3B69D61 /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 08539D4764764E1B84B2222B /* Lato-Regular.ttf */; };
+		517B4A25AAA34084AA93FD7A /* Lato-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5F487854E4C1463A801A1974 /* Lato-Thin.ttf */; };
+		1B18745F131A4D2CB06DC9A1 /* Lato-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 76A7A8B8D0314978A2486519 /* Lato-ThinItalic.ttf */; };
+		A5EDFC392CB04D73AFFE0528 /* Cocogoose_1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1B2290A4155344A88BDD69D3 /* Cocogoose_1.ttf */; };
+		D801513C90E4483D82A59B1E /* Cocogoose_10.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7555C6EFF91A4D0DACC6E13B /* Cocogoose_10.ttf */; };
+		92E17E5BF7C4458685B7D661 /* Cocogoose_2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5A6A1CA96A541B59AA0AD3F /* Cocogoose_2.ttf */; };
+		6799715A123C43EC9760AE92 /* Cocogoose_3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D937F259F9664EFFA0C26F54 /* Cocogoose_3.ttf */; };
+		C71CD6D217BB4293ACD2C7A7 /* Cocogoose_4.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 14803F9D9EEE43D1B75A01BD /* Cocogoose_4.ttf */; };
+		715F3018692F4402A5F6319F /* Cocogoose_5.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7E940B53265F4EE3BEEADE96 /* Cocogoose_5.ttf */; };
+		4783B14045AB45119EFF99AE /* Cocogoose_6.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C36B4E2874B343A3BFBD3DC6 /* Cocogoose_6.ttf */; };
+		9CAC4C8E2FDF4A76B82EDDD4 /* Cocogoose_7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4DF4E2FE33E54604A2239FB7 /* Cocogoose_7.ttf */; };
+		718103BB6226482E864E27EA /* Cocogoose_8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FE2AA192CFE4F4B94EC6C67 /* Cocogoose_8.ttf */; };
+		FA7D91D1163F4209ADF6BC7C /* Cocogoose_9.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B63183621A8C4F9192BB90DE /* Cocogoose_9.ttf */; };
+		D9EB052D4F5842AEA0941708 /* Lato_1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8A0DB58BEDD4479BFFD2F7E /* Lato_1.ttf */; };
+		0C4E7A3738D846F7AD811A4D /* Lato_10.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 99FA5C6081DD43349A24C92D /* Lato_10.ttf */; };
+		FCF1599CBB744C44A5C8860E /* Lato_2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 77534A6166C945BD909EA9C6 /* Lato_2.ttf */; };
+		598CD83BC04444B18C4ED28C /* Lato_3.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 514C829E26B242B587D62472 /* Lato_3.ttf */; };
+		03632D6CB7EC4D1BAE2D3234 /* Lato_4.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4AE6B60CAA6F4B5285D2B8B3 /* Lato_4.ttf */; };
+		032F5EE42AEC47ABA78BEB48 /* Lato_5.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BB38E76B0F34D5CB3BC5465 /* Lato_5.ttf */; };
+		A3A58C5384EB43C7A777F73C /* Lato_6.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA4E57FF3CE74246AAC1747C /* Lato_6.ttf */; };
+		97E26B9C35C04532AC351DED /* Lato_7.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72BEE1B2F2904FB4855676D2 /* Lato_7.ttf */; };
+		B2B6A14F6B0348A6A5A59436 /* Lato_8.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 048AAE3E3E81495F93E2476B /* Lato_8.ttf */; };
+		6984C2DACAC643EDAB023DBC /* Lato_9.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2D7D0D71CED0449EB84C4D57 /* Lato_9.ttf */; };
+		5ABAB18B08234E05AE4AA55E /* Lato2.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E48F309190B84726900D9AEB /* Lato2.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* makitkdsmobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = makitkdsmobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = makitkdsmobile/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = makitkdsmobile/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = makitkdsmobile/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = makitkdsmobile/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = makitkdsmobile/main.m; sourceTree = "<group>"; };
+		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-makitkdsmobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-makitkdsmobile.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C2E3173556A471DD304B334 /* Pods-makitkdsmobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makitkdsmobile.debug.xcconfig"; path = "Target Support Files/Pods-makitkdsmobile/Pods-makitkdsmobile.debug.xcconfig"; sourceTree = "<group>"; };
+		7A4D352CD337FB3A3BF06240 /* Pods-makitkdsmobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-makitkdsmobile.release.xcconfig"; path = "Target Support Files/Pods-makitkdsmobile/Pods-makitkdsmobile.release.xcconfig"; sourceTree = "<group>"; };
+		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = makitkdsmobile/SplashScreen.storyboard; sourceTree = "<group>"; };
+		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
+		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-makitkdsmobile/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		89E9D79A33C549718AC1ED0E /* Cocogoose_Pro_Italic-trial.ttf */ = {isa = PBXFileReference; name = "Cocogoose_Pro_Italic-trial.ttf"; path = "../assets/fonts/Cocogoose_Pro_Italic-trial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8D10DC6ED7D24A9EA92811C4 /* Cocogoose_Pro_Light_Italic-trial.ttf */ = {isa = PBXFileReference; name = "Cocogoose_Pro_Light_Italic-trial.ttf"; path = "../assets/fonts/Cocogoose_Pro_Light_Italic-trial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CC2E4D8D02E4452D9FB46405 /* Cocogoose_Pro_Light-trial.ttf */ = {isa = PBXFileReference; name = "Cocogoose_Pro_Light-trial.ttf"; path = "../assets/fonts/Cocogoose_Pro_Light-trial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		94AE7EA14A5B4E4E9F7A2473 /* Cocogoose_Pro_Semilight_Italic-trial.ttf */ = {isa = PBXFileReference; name = "Cocogoose_Pro_Semilight_Italic-trial.ttf"; path = "../assets/fonts/Cocogoose_Pro_Semilight_Italic-trial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6F4524BECE854684875669C1 /* Cocogoose_Pro_Semilight-trial.ttf */ = {isa = PBXFileReference; name = "Cocogoose_Pro_Semilight-trial.ttf"; path = "../assets/fonts/Cocogoose_Pro_Semilight-trial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E938A6A2C9754804862059AA /* Cocogoose_Pro_Thin_Italic-trial.ttf */ = {isa = PBXFileReference; name = "Cocogoose_Pro_Thin_Italic-trial.ttf"; path = "../assets/fonts/Cocogoose_Pro_Thin_Italic-trial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		450807C7FF8B48BF813B513A /* Cocogoose_Pro_Thin-trial.ttf */ = {isa = PBXFileReference; name = "Cocogoose_Pro_Thin-trial.ttf"; path = "../assets/fonts/Cocogoose_Pro_Thin-trial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7F7BED5E770A4652B70E78CD /* Cocogoose_Pro_UltraLight_Italic-trial.ttf */ = {isa = PBXFileReference; name = "Cocogoose_Pro_UltraLight_Italic-trial.ttf"; path = "../assets/fonts/Cocogoose_Pro_UltraLight_Italic-trial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		65AC74DC96B44D0F843B7901 /* Cocogoose_Pro_Ultralight-trial.ttf */ = {isa = PBXFileReference; name = "Cocogoose_Pro_Ultralight-trial.ttf"; path = "../assets/fonts/Cocogoose_Pro_Ultralight-trial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A9CEB566EA6543F68ED5FDC2 /* Cocogoose_Pro-trial.ttf */ = {isa = PBXFileReference; name = "Cocogoose_Pro-trial.ttf"; path = "../assets/fonts/Cocogoose_Pro-trial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E5AB70F1340E4D2BBE798E30 /* Lato-Black.ttf */ = {isa = PBXFileReference; name = "Lato-Black.ttf"; path = "../assets/fonts/Lato-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0B4997434A4945F3BCB053BE /* Lato-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Lato-BlackItalic.ttf"; path = "../assets/fonts/Lato-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		401B7F758E2F431683C77448 /* Lato-Bold.ttf */ = {isa = PBXFileReference; name = "Lato-Bold.ttf"; path = "../assets/fonts/Lato-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8F8E372350AE4494B133AB0C /* Lato-BoldItalic.ttf */ = {isa = PBXFileReference; name = "Lato-BoldItalic.ttf"; path = "../assets/fonts/Lato-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A12028CB23A84B01B8B620FF /* Lato-Italic.ttf */ = {isa = PBXFileReference; name = "Lato-Italic.ttf"; path = "../assets/fonts/Lato-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E2E07B03B7BB474BB2291267 /* Lato-Light.ttf */ = {isa = PBXFileReference; name = "Lato-Light.ttf"; path = "../assets/fonts/Lato-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		290CDB91893E4A40A7BAAD55 /* Lato-LightItalic.ttf */ = {isa = PBXFileReference; name = "Lato-LightItalic.ttf"; path = "../assets/fonts/Lato-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		08539D4764764E1B84B2222B /* Lato-Regular.ttf */ = {isa = PBXFileReference; name = "Lato-Regular.ttf"; path = "../assets/fonts/Lato-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5F487854E4C1463A801A1974 /* Lato-Thin.ttf */ = {isa = PBXFileReference; name = "Lato-Thin.ttf"; path = "../assets/fonts/Lato-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		76A7A8B8D0314978A2486519 /* Lato-ThinItalic.ttf */ = {isa = PBXFileReference; name = "Lato-ThinItalic.ttf"; path = "../assets/fonts/Lato-ThinItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1B2290A4155344A88BDD69D3 /* Cocogoose_1.ttf */ = {isa = PBXFileReference; name = "Cocogoose_1.ttf"; path = "../assets/fonts/Cocogoose_1.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7555C6EFF91A4D0DACC6E13B /* Cocogoose_10.ttf */ = {isa = PBXFileReference; name = "Cocogoose_10.ttf"; path = "../assets/fonts/Cocogoose_10.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B5A6A1CA96A541B59AA0AD3F /* Cocogoose_2.ttf */ = {isa = PBXFileReference; name = "Cocogoose_2.ttf"; path = "../assets/fonts/Cocogoose_2.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D937F259F9664EFFA0C26F54 /* Cocogoose_3.ttf */ = {isa = PBXFileReference; name = "Cocogoose_3.ttf"; path = "../assets/fonts/Cocogoose_3.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		14803F9D9EEE43D1B75A01BD /* Cocogoose_4.ttf */ = {isa = PBXFileReference; name = "Cocogoose_4.ttf"; path = "../assets/fonts/Cocogoose_4.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7E940B53265F4EE3BEEADE96 /* Cocogoose_5.ttf */ = {isa = PBXFileReference; name = "Cocogoose_5.ttf"; path = "../assets/fonts/Cocogoose_5.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C36B4E2874B343A3BFBD3DC6 /* Cocogoose_6.ttf */ = {isa = PBXFileReference; name = "Cocogoose_6.ttf"; path = "../assets/fonts/Cocogoose_6.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4DF4E2FE33E54604A2239FB7 /* Cocogoose_7.ttf */ = {isa = PBXFileReference; name = "Cocogoose_7.ttf"; path = "../assets/fonts/Cocogoose_7.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3FE2AA192CFE4F4B94EC6C67 /* Cocogoose_8.ttf */ = {isa = PBXFileReference; name = "Cocogoose_8.ttf"; path = "../assets/fonts/Cocogoose_8.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B63183621A8C4F9192BB90DE /* Cocogoose_9.ttf */ = {isa = PBXFileReference; name = "Cocogoose_9.ttf"; path = "../assets/fonts/Cocogoose_9.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A8A0DB58BEDD4479BFFD2F7E /* Lato_1.ttf */ = {isa = PBXFileReference; name = "Lato_1.ttf"; path = "../assets/fonts/Lato_1.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		99FA5C6081DD43349A24C92D /* Lato_10.ttf */ = {isa = PBXFileReference; name = "Lato_10.ttf"; path = "../assets/fonts/Lato_10.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		77534A6166C945BD909EA9C6 /* Lato_2.ttf */ = {isa = PBXFileReference; name = "Lato_2.ttf"; path = "../assets/fonts/Lato_2.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		514C829E26B242B587D62472 /* Lato_3.ttf */ = {isa = PBXFileReference; name = "Lato_3.ttf"; path = "../assets/fonts/Lato_3.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4AE6B60CAA6F4B5285D2B8B3 /* Lato_4.ttf */ = {isa = PBXFileReference; name = "Lato_4.ttf"; path = "../assets/fonts/Lato_4.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6BB38E76B0F34D5CB3BC5465 /* Lato_5.ttf */ = {isa = PBXFileReference; name = "Lato_5.ttf"; path = "../assets/fonts/Lato_5.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CA4E57FF3CE74246AAC1747C /* Lato_6.ttf */ = {isa = PBXFileReference; name = "Lato_6.ttf"; path = "../assets/fonts/Lato_6.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		72BEE1B2F2904FB4855676D2 /* Lato_7.ttf */ = {isa = PBXFileReference; name = "Lato_7.ttf"; path = "../assets/fonts/Lato_7.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		048AAE3E3E81495F93E2476B /* Lato_8.ttf */ = {isa = PBXFileReference; name = "Lato_8.ttf"; path = "../assets/fonts/Lato_8.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2D7D0D71CED0449EB84C4D57 /* Lato_9.ttf */ = {isa = PBXFileReference; name = "Lato_9.ttf"; path = "../assets/fonts/Lato_9.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E48F309190B84726900D9AEB /* Lato2.ttf */ = {isa = PBXFileReference; name = "Lato2.ttf"; path = "../assets/fonts/Lato2.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96905EF65AED1B983A6B3ABC /* libPods-makitkdsmobile.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13B07FAE1A68108700A75B9A /* makitkdsmobile */ = {
+			isa = PBXGroup;
+			children = (
+				BB2F792B24A3F905000567C9 /* Supporting */,
+				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				13B07FB51A68108700A75B9A /* Images.xcassets */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
+			);
+			name = makitkdsmobile;
+			sourceTree = "<group>";
+		};
+		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				58EEBF8E8E6FB1BC6CAF49B5 /* libPods-makitkdsmobile.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				13B07FAE1A68108700A75B9A /* makitkdsmobile */,
+				832341AE1AAA6A7D00B99B32 /* Libraries */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				D65327D7A22EEC0BE12398D9 /* Pods */,
+				D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */,
+				770F36534AAE45808BCBB06A /* Resources */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+			usesTabs = 0;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* makitkdsmobile.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92DBD88DE9BF7D494EA9DA96 /* makitkdsmobile */ = {
+			isa = PBXGroup;
+			children = (
+				FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */,
+			);
+			name = makitkdsmobile;
+			sourceTree = "<group>";
+		};
+		BB2F792B24A3F905000567C9 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				BB2F792C24A3F905000567C9 /* Expo.plist */,
+			);
+			name = Supporting;
+			path = makitkdsmobile/Supporting;
+			sourceTree = "<group>";
+		};
+		D65327D7A22EEC0BE12398D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6C2E3173556A471DD304B334 /* Pods-makitkdsmobile.debug.xcconfig */,
+				7A4D352CD337FB3A3BF06240 /* Pods-makitkdsmobile.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */ = {
+			isa = PBXGroup;
+			children = (
+				92DBD88DE9BF7D494EA9DA96 /* makitkdsmobile */,
+			);
+			name = ExpoModulesProviders;
+			sourceTree = "<group>";
+		};
+		770F36534AAE45808BCBB06A /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				89E9D79A33C549718AC1ED0E /* Cocogoose_Pro_Italic-trial.ttf */,
+				8D10DC6ED7D24A9EA92811C4 /* Cocogoose_Pro_Light_Italic-trial.ttf */,
+				CC2E4D8D02E4452D9FB46405 /* Cocogoose_Pro_Light-trial.ttf */,
+				94AE7EA14A5B4E4E9F7A2473 /* Cocogoose_Pro_Semilight_Italic-trial.ttf */,
+				6F4524BECE854684875669C1 /* Cocogoose_Pro_Semilight-trial.ttf */,
+				E938A6A2C9754804862059AA /* Cocogoose_Pro_Thin_Italic-trial.ttf */,
+				450807C7FF8B48BF813B513A /* Cocogoose_Pro_Thin-trial.ttf */,
+				7F7BED5E770A4652B70E78CD /* Cocogoose_Pro_UltraLight_Italic-trial.ttf */,
+				65AC74DC96B44D0F843B7901 /* Cocogoose_Pro_Ultralight-trial.ttf */,
+				A9CEB566EA6543F68ED5FDC2 /* Cocogoose_Pro-trial.ttf */,
+				E5AB70F1340E4D2BBE798E30 /* Lato-Black.ttf */,
+				0B4997434A4945F3BCB053BE /* Lato-BlackItalic.ttf */,
+				401B7F758E2F431683C77448 /* Lato-Bold.ttf */,
+				8F8E372350AE4494B133AB0C /* Lato-BoldItalic.ttf */,
+				A12028CB23A84B01B8B620FF /* Lato-Italic.ttf */,
+				E2E07B03B7BB474BB2291267 /* Lato-Light.ttf */,
+				290CDB91893E4A40A7BAAD55 /* Lato-LightItalic.ttf */,
+				08539D4764764E1B84B2222B /* Lato-Regular.ttf */,
+				5F487854E4C1463A801A1974 /* Lato-Thin.ttf */,
+				76A7A8B8D0314978A2486519 /* Lato-ThinItalic.ttf */,
+				1B2290A4155344A88BDD69D3 /* Cocogoose_1.ttf */,
+				7555C6EFF91A4D0DACC6E13B /* Cocogoose_10.ttf */,
+				B5A6A1CA96A541B59AA0AD3F /* Cocogoose_2.ttf */,
+				D937F259F9664EFFA0C26F54 /* Cocogoose_3.ttf */,
+				14803F9D9EEE43D1B75A01BD /* Cocogoose_4.ttf */,
+				7E940B53265F4EE3BEEADE96 /* Cocogoose_5.ttf */,
+				C36B4E2874B343A3BFBD3DC6 /* Cocogoose_6.ttf */,
+				4DF4E2FE33E54604A2239FB7 /* Cocogoose_7.ttf */,
+				3FE2AA192CFE4F4B94EC6C67 /* Cocogoose_8.ttf */,
+				B63183621A8C4F9192BB90DE /* Cocogoose_9.ttf */,
+				A8A0DB58BEDD4479BFFD2F7E /* Lato_1.ttf */,
+				99FA5C6081DD43349A24C92D /* Lato_10.ttf */,
+				77534A6166C945BD909EA9C6 /* Lato_2.ttf */,
+				514C829E26B242B587D62472 /* Lato_3.ttf */,
+				4AE6B60CAA6F4B5285D2B8B3 /* Lato_4.ttf */,
+				6BB38E76B0F34D5CB3BC5465 /* Lato_5.ttf */,
+				CA4E57FF3CE74246AAC1747C /* Lato_6.ttf */,
+				72BEE1B2F2904FB4855676D2 /* Lato_7.ttf */,
+				048AAE3E3E81495F93E2476B /* Lato_8.ttf */,
+				2D7D0D71CED0449EB84C4D57 /* Lato_9.ttf */,
+				E48F309190B84726900D9AEB /* Lato2.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* makitkdsmobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "makitkdsmobile" */;
+			buildPhases = (
+				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
+				FD10A7F022414F080027D42C /* Start Packager */,
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = makitkdsmobile;
+			productName = makitkdsmobile;
+			productReference = 13B07F961A680F5B00A75B9A /* makitkdsmobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1130;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "makitkdsmobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* makitkdsmobile */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
+				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
+				936E3C06B7F846AF9988767F /* Cocogoose_Pro_Italic-trial.ttf in Resources */,
+				258148D4DC314AC69320577D /* Cocogoose_Pro_Light_Italic-trial.ttf in Resources */,
+				589241A9EAF74EF68F24E8C7 /* Cocogoose_Pro_Light-trial.ttf in Resources */,
+				241C8718AF384C68A4AF5AAF /* Cocogoose_Pro_Semilight_Italic-trial.ttf in Resources */,
+				D0A524159E654DE0B78A9C63 /* Cocogoose_Pro_Semilight-trial.ttf in Resources */,
+				16440BCB3C97455796FC6732 /* Cocogoose_Pro_Thin_Italic-trial.ttf in Resources */,
+				0A19B92F1AB3429A8E25CDFC /* Cocogoose_Pro_Thin-trial.ttf in Resources */,
+				FCA48A29785443E49AC852B5 /* Cocogoose_Pro_UltraLight_Italic-trial.ttf in Resources */,
+				C5993CA9E3DE45999C7A418F /* Cocogoose_Pro_Ultralight-trial.ttf in Resources */,
+				F5EB5CE3AF1B48859E151F22 /* Cocogoose_Pro-trial.ttf in Resources */,
+				E8CD433D1A024E8D9A998247 /* Lato-Black.ttf in Resources */,
+				E78C527732A34EAF9E9E3B95 /* Lato-BlackItalic.ttf in Resources */,
+				E794FC4C8E2E409286E49469 /* Lato-Bold.ttf in Resources */,
+				6786E545DFA84FD1AD24A6E2 /* Lato-BoldItalic.ttf in Resources */,
+				ECB4F63F58434BC1AE4597EB /* Lato-Italic.ttf in Resources */,
+				D6BFA9D9BECA473C93106F18 /* Lato-Light.ttf in Resources */,
+				74906FF422ED495A964F7C03 /* Lato-LightItalic.ttf in Resources */,
+				86BB9623A8984E79B3B69D61 /* Lato-Regular.ttf in Resources */,
+				517B4A25AAA34084AA93FD7A /* Lato-Thin.ttf in Resources */,
+				1B18745F131A4D2CB06DC9A1 /* Lato-ThinItalic.ttf in Resources */,
+				A5EDFC392CB04D73AFFE0528 /* Cocogoose_1.ttf in Resources */,
+				D801513C90E4483D82A59B1E /* Cocogoose_10.ttf in Resources */,
+				92E17E5BF7C4458685B7D661 /* Cocogoose_2.ttf in Resources */,
+				6799715A123C43EC9760AE92 /* Cocogoose_3.ttf in Resources */,
+				C71CD6D217BB4293ACD2C7A7 /* Cocogoose_4.ttf in Resources */,
+				715F3018692F4402A5F6319F /* Cocogoose_5.ttf in Resources */,
+				4783B14045AB45119EFF99AE /* Cocogoose_6.ttf in Resources */,
+				9CAC4C8E2FDF4A76B82EDDD4 /* Cocogoose_7.ttf in Resources */,
+				718103BB6226482E864E27EA /* Cocogoose_8.ttf in Resources */,
+				FA7D91D1163F4209ADF6BC7C /* Cocogoose_9.ttf in Resources */,
+				D9EB052D4F5842AEA0941708 /* Lato_1.ttf in Resources */,
+				0C4E7A3738D846F7AD811A4D /* Lato_10.ttf in Resources */,
+				FCF1599CBB744C44A5C8860E /* Lato_2.ttf in Resources */,
+				598CD83BC04444B18C4ED28C /* Lato_3.ttf in Resources */,
+				03632D6CB7EC4D1BAE2D3234 /* Lato_4.ttf in Resources */,
+				032F5EE42AEC47ABA78BEB48 /* Lato_5.ttf in Resources */,
+				A3A58C5384EB43C7A777F73C /* Lato_6.ttf in Resources */,
+				97E26B9C35C04532AC351DED /* Lato_7.ttf in Resources */,
+				B2B6A14F6B0348A6A5A59436 /* Lato_8.ttf in Resources */,
+				6984C2DACAC643EDAB023DBC /* Lato_9.ttf in Resources */,
+				5ABAB18B08234E05AE4AA55E /* Lato2.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n\n# The project root by default is one level up from the ios directory\nexport PROJECT_ROOT=\"$PROJECT_DIR\"/..\n\n`node --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/react-native-xcode.sh'\"`\n";
+		};
+		08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-makitkdsmobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-makitkdsmobile/Pods-makitkdsmobile-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXConstants/EXConstants.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/EXUpdates/EXUpdates.bundle",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXConstants.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EXUpdates.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-makitkdsmobile/Pods-makitkdsmobile-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD10A7F022414F080027D42C /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > `node --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/.packager.env'\"`\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open `node --print \"require('path').dirname(require.resolve('react-native/package.json')) + '/scripts/launchPackager.command'\"` || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C2E3173556A471DD304B334 /* Pods-makitkdsmobile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FB_SONARKIT_ENABLED=1",
+				);
+				INFOPLIST_FILE = makitkdsmobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.name.makitkdsmobile;
+				PRODUCT_NAME = makitkdsmobile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A4D352CD337FB3A3BF06240 /* Pods-makitkdsmobile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = makitkdsmobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.name.makitkdsmobile;
+				PRODUCT_NAME = makitkdsmobile;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = "\"$(inherited)\"";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "/usr/lib/swift $(inherited)";
+				LIBRARY_SEARCH_PATHS = "\"$(inherited)\"";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "makitkdsmobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "makitkdsmobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

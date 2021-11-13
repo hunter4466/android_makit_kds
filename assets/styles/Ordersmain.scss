@@ -1,0 +1,133 @@
+@import './fonts';
+.main_container {
+  background-color: #030c0e;
+  height: 100%;
+}
+.orders_main_container {
+    display: flex;
+    flex-direction: row;
+    background-color: #03080e;
+    padding-right: 20px;
+    height: 100%;
+  }
+.timer_wrapper {
+    width: 100%;
+    height: 20px;
+    text-align: center;
+}
+
+.timer {
+    color: #ffffff;
+    border-style: solid;
+    border-color: #69696952;
+    border-radius: 8px;
+    border-width: 0.5px;
+    width: 80%;
+}
+
+.single_order_main_container {
+}
+
+.single_order_container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    border-style: solid;
+    border-color: #69696952;
+    border-radius: 8px;
+    border-width: 0.5px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #020607;
+    padding-bottom: 20px;
+    max-height: 95%;
+    overflow-y: scroll;
+}
+
+.customername {
+    color: #2D7AC0;
+    width: 100%;
+    text-align: center;
+    @include customFont(Roboto_900Black, 20px);
+}
+
+.producttitle {
+    color: #ffffff;
+    margin-left: 15px;
+    width: 100%;
+    height: 20px;
+    @include customFont(Roboto_900Black, 15px);
+    margin-top: 10px;
+}
+
+.sub_product_title {
+    color: #ffffff;
+    margin-left: 20px;
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+    @include customFont(Roboto_300Light, 15px);
+}
+
+.sub_sub_product {
+    color: #ffffff;
+    margin-left: 35px;
+    width: 100%;
+    height: 20px;
+    @include customFont(Roboto_100Thin, 13px);
+}
+  // ----------- App ------------------------------------------
+.main_container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 100%;
+}
+  
+.links_container {
+    display: flex;
+    flex-direction: row;
+    background-color: #020607;
+    justify-content: flex-end;
+    height: 48px;
+    padding-top: 6px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #69696952;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #69696952;
+    margin-top: 22px;
+    width: 100%;
+}
+
+.link_style {
+    border-style: solid;
+    border-color: #9fb3c7;
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: #030c0e;
+    width: 120px;
+    padding-top: 5px;
+    margin-left: 10px;
+    height: 33px;
+}
+
+.pressed_link_style {
+    border-style: solid;
+    border-color: #9fb3c7;
+    border-radius: 5px;
+    border-width: 1px;
+    background-color: #5a909c;
+    width: 120px;
+    padding-top: 5px;
+    margin-left: 10px;
+    height: 33px;
+}
+
+  .link_text_style {
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+  }

@@ -1,0 +1,53 @@
+{
+  "name": "makit_kds_mobile",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "@expo-google-fonts/dev": "^0.2.0",
+    "@expo-google-fonts/roboto": "^0.2.0",
+    "@react-native-community/cli": "^6.1.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-react-native-classname-to-style": "^1.2.2",
+    "babel-plugin-react-native-platform-specific-extensions": "^1.1.1",
+    "expo": "~43.0.0",
+    "expo-app-loading": "~1.2.1",
+    "expo-font": "~10.0.3",
+    "expo-splash-screen": "~0.13.3",
+    "expo-status-bar": "~1.1.0",
+    "expo-updates": "~0.10.15",
+    "node-sass": "^6.0.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-native": "^0.64.3",
+    "react-native-gesture-handler": "~1.10.2",
+    "react-native-reanimated": "~2.2.0",
+    "react-native-safe-area-context": "3.3.2",
+    "react-native-sass-transformer": "^2.0.0",
+    "react-native-screens": "~3.8.0",
+    "react-native-sound": "^0.11.1",
+    "react-native-web": "0.17.1",
+    "react-redux": "^7.2.6",
+    "react-router-native": "^6.0.1",
+    "redux": "^4.1.2",
+    "redux-logger": "^3.0.6",
+    "sass": "^1.43.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.1.1",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-native": "^3.11.0",
+    "install-peers": "^1.0.3"
+  },
+  "private": true
+}

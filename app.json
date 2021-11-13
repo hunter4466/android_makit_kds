@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "makit_kds_mobile",
+    "slug": "makit_kds_mobile",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "description": "Kitchen display system for Makit",
+    "android": {
+      "package": "app.makitkds.App"
+    },
+    "packagerOpts": {
+      "config": "metro.config.js",
+      "sourceExts": ["js", "jsx", "scss", "sass"]
+    }
+  },
+  "name": "makit_kds_mobile"
+}
