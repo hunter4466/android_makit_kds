@@ -29,6 +29,18 @@ const switchScreenOn = (payload) => ({
 const resetTimers = () => ({
   type: RESET_TIMERS
 })
+const sendToKitchen = (payload) => ({
+  type: SEND_TO_KITCHEN,
+  payload
+})
+const sendToEnsamble = (payload) => ({
+  type: SEND_TO_ENSAMBLE,
+  payload
+})
+const sendToDelivery = (payload) => ({
+  type: SEND_TO_DELIVERY,
+  payload
+})
 // ----------------- REDUCERS ------------
 const kdsMainServiceReducer = (state = [], action) => {
   switch (action.type) {
@@ -71,13 +83,13 @@ const kdsMainSwitchReducer = (state = mainSwitchDefaultState, action) => {
       return state;
   }
 }
+let test = 0
 // ---------------- Middlewares and Side Effects --------------
 const fetchOrdersLengthMiddleware = (store) => (next) => (action) => {
   const evaluate = (value) => {
     const long = value.size
-    const test = 0
-    if(store.length) {
-      test = store.length
+    if(store.getState().kdsMainServiceReducer) {
+      test = store.getState().kdsMainServiceReducer.length
     } else { 
       test = 0
     }
@@ -109,6 +121,7 @@ const fetchOrdersMiddleware = (store) => (next) => (action) => {
     return arrayToParse;
   };
   if (action.type === TRIGGER_PRODUCTS) {
+    console.log('trying to fetcch products')
     fetch('https://www.makitperu.com/getlastweekorders', {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -120,6 +133,50 @@ const fetchOrdersMiddleware = (store) => (next) => (action) => {
   }
   next(action);
 };
+
+const sentToKitchenMiddleware = () => (next) => (action) => {
+  if (action.type === SEND_TO_KITCHEN) {
+    console.log('trying to fetcch products')
+    fetch(`https://www.makitperu.com/sendToKitchen/${action.payload}`, {
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Access-Control-Allow-Origin': '*'
+      },
+      cors: 'no-cors'
+    })
+  }
+  next(action);
+};
+
+const sentToEnsambleMiddleware = () => (next) => (action) => {
+  if (action.type === SEND_TO_ENSAMBLE) {
+    console.log('trying to fetcch products')
+    fetch(`https://www.makitperu.com/sendToEnsamble/${action.payload}`, {
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Access-Control-Allow-Origin': '*'
+      },
+      cors: 'no-cors'
+    })
+  }
+  next(action);
+};
+
+const sentToDeliveryMiddleware = () => (next) => (action) => {
+  if (action.type === SEND_TO_DELIVERY) {
+    console.log('trying to fetcch products')
+    fetch(`https://www.makitperu.com/sendToDelivery/${action.payload}`, {
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'Access-Control-Allow-Origin': '*'
+      },
+      cors: 'no-cors'
+    })
+  }
+  next(action);
+};
+
+
 
 // ---------------- Exports --------------
 export {
@@ -133,7 +190,13 @@ export {
   switchScreenOn,
   updateTimers,
   resetTimers,
+  sendToKitchen,
+  sendToEnsamble,
+  sendToDelivery,
   // ---- Middlewares -----
   fetchOrdersMiddleware,
   fetchOrdersLengthMiddleware,
+  sentToKitchenMiddleware,
+  sentToEnsambleMiddleware,
+  sentToDeliveryMiddleware,
 };

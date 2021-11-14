@@ -1,27 +1,17 @@
-class Timer {
-    constructor(orderid, millisec) {
-      this.id = orderid
-      this.milliseconds = millisec
-      this.time = 'this works'
-      this.startTimer();
-      this.timerSwitch = true;
-    }
-    get getTime () {
-      return this.time
-    }
-    get getId () {
-      return this.id
-    }
-    set stopTimer (val) {
-        this.timerSwitch = val;
-    }
-    startTimer () {
-        const date = Date.now()
-        this.time = date - this.milliseconds
-        console.log(this.time)
-        setTimeout(() => {
-          if(this.timerSwitch){this.startTimer(this.id, this.milliseconds);}
-        }, 1000);
-    }
-}   
-export default Timer;
+const msToTime = (duration) => {
+  if(duration > 0) {
+    var milliseconds = parseInt((duration % 1000) / 100),
+    seconds = Math.floor((duration / 1000) % 60),
+    minutes = Math.floor((duration / (1000 * 60)) % 60),
+    hours = Math.floor((duration / (1000 * 60 * 60)) % 24),
+    days = Math.floor((duration / (1000*60*60*24)) % 7);
+ 
+   hours = (hours < 10) ? "0" + hours : hours;
+   minutes = (minutes < 10) ? "0" + minutes : minutes;
+   seconds = (seconds < 10) ? "0" + seconds : seconds;
+   days = (days > 0) ? days + " Días " : '';
+   return days + hours + ":" + minutes + ":" + seconds;
+  }
+  return 'Loading Timer'
+}
+export default msToTime;

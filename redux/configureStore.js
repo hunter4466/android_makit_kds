@@ -10,7 +10,10 @@ import {
   kdsMainSwitchReducer,
   // --- Middlewares --
   fetchOrdersMiddleware,
-  fetchOrdersLengthMiddleware
+  fetchOrdersLengthMiddleware,
+  sentToKitchenMiddleware,
+  sentToEnsambleMiddleware,
+  sentToDeliveryMiddleware,
 } from './kds/kds';
 
 const reducer = combineReducers({
@@ -24,6 +27,9 @@ const composedEnhancer = compose(
   // ------------ Middlewares -----
   applyMiddleware(fetchOrdersLengthMiddleware),
   applyMiddleware(fetchOrdersMiddleware),
+  applyMiddleware(sentToKitchenMiddleware),
+  applyMiddleware(sentToEnsambleMiddleware),
+  applyMiddleware(sentToDeliveryMiddleware)
   // ------------- Logger --------------
  // applyMiddleware(logger)
 );

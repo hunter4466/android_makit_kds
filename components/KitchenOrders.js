@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { loadOrders, resetTimers, switchScreen, updateTimers } from '../redux/kds/kds';
 import Ordersmainstyles from '../assets/styles/Ordersmain.scss';
 import Timer from './utils/timer';
+import msToTime from './utils/timer';
 /*import Sound from 'react-native-sound';*/
 
 const KitchenOrders = () => {
@@ -11,48 +12,32 @@ const KitchenOrders = () => {
   const infoContent = useSelector((state) => state.kdsMainServiceReducer);
   const [timersState, updTimerState] = useState({})
   const screenState = useSelector((state) => state.kdsMainSwitchReducer);
-  /*Sound.setCategory('Playback')
-  var new_order_sound = new Sound('new_order.mp3', Sound.MAIN_BUNDLE, (error) => {
-    if (error) {
-      console.log('failed to load the sound', error);
-      return;
-    }
-    // when loaded successfully
-    console.log('duration in seconds: ' + whoosh.getDuration() + 'number of channels: ' + whoosh.getNumberOfChannels());
-  });
-  new_order_sound.setVolume(1);
-  */
+  
   const fetchFunc = () => {
-    if(screenState.kitchen){
-      dispatch(loadOrders());
-      setTimeout(() => {
-        fetchFunc();
-      }, 5000);
-    }
-    setTimeout(() => {
-      fetchFunc();
-    }, 5000);
+    setInterval(() => {
+      if(screenState.kitchen){
+        dispatch(loadOrders());
+      }
+    }, 10000)
   };
-/*
-  const interval = () => {
-    console.log('working')
-    const tkeys = Object.keys(timersState)
-    tkeys.forEach((e) => {
-      timerrssState[e].stopTimer = false
-    })
-    let newTimers = {}
-    infoContent.forEach((e) => {
-      newTimers[e.id] = new Timer(e.idordenes, e.hora_orden)
-    })
-    updTimerState(newTimers)
-    setTimeout(() => {
-      interval();
-    }, 1000);
-  };
-*/
+
+  const updTimers = () => {
+    setInterval(() => {
+      const times = {}
+      infoContent.forEach((e) => {
+        const newTime = Date.now();
+        const rest = newTime - e.hora_orden
+        console.log(e.idordenes, rest)
+        times[e.idordenes] = msToTime(rest)
+      })
+      console.log(times)
+      updTimerState(times)
+    }, 1000)
+  }
+
   useEffect(() => {
     fetchFunc();
-   /* interval();*/
+    updTimers();
   }, []);
 
   const evaluator = (type, quant) => {
@@ -63,14 +48,8 @@ const KitchenOrders = () => {
     return quant;
   };
 
-  const handleOrderClick = () => {
-   /* new_order_sound.play(success => {
-      if (success) {
-        console.log('successfully finished playing');
-      } else {
-        console.log('playback failed due to audio decoding errors');
-      }
-    });*/
+  const handleOrderClick = (id) => {
+   dispatch(sendToEnsamle(id))
   }
 
   const emogiator = (params) => {
@@ -121,6 +100,7 @@ const KitchenOrders = () => {
                     ))}
                   </View>
                 ))}
+                <Text style={Ordersmainstyles.sub_sub_product}>---------------------------------</Text>
               </View>
             ))}
             <Text></Text>
