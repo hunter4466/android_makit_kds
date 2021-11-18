@@ -11,6 +11,7 @@ import {
   // --- Middlewares --
   fetchOrdersMiddleware,
   fetchOrdersLengthMiddleware,
+  updateTimersMiddleware,
   sentToKitchenMiddleware,
   sentToEnsambleMiddleware,
   sentToDeliveryMiddleware,
@@ -20,24 +21,25 @@ const reducer = combineReducers({
   // ------------ Reducers -----
   kdsMainServiceReducer,
   timersReducer,
-  kdsMainSwitchReducer
+  kdsMainSwitchReducer,
 });
 
 const composedEnhancer = compose(
   // ------------ Middlewares -----
   applyMiddleware(fetchOrdersLengthMiddleware),
   applyMiddleware(fetchOrdersMiddleware),
+  applyMiddleware(updateTimersMiddleware),
   applyMiddleware(sentToKitchenMiddleware),
   applyMiddleware(sentToEnsambleMiddleware),
-  applyMiddleware(sentToDeliveryMiddleware)
+  applyMiddleware(sentToDeliveryMiddleware),
   // ------------- Logger --------------
- // applyMiddleware(logger)
+  // applyMiddleware(logger)
 );
 
 const store = createStore(
   reducer,
   undefined,
-  composedEnhancer
+  composedEnhancer,
 );
 
 export default store;
